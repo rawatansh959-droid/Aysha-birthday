@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4e8d8" />
+  <title>Happy Birthday Aysha 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video class="ambient-video" autoplay muted loop playsinline aria-hidden="true" tabindex="-1"><source src="assets/background-animation.mp4" type="video/mp4"></video>
+  <audio id="song" loop preload="auto" playsinline>
+    <source src="assets/darkhaast.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Floating player inspired by your screenshot -->
+  <div class="music-player" id="musicPlayer" aria-label="Darkhaast music player">
+    <img class="player-art" src="assets/darkhaast-cover.jpg" alt="Music artwork" />
+    <div class="player-details">
+      <div class="track-title-row"><strong>Darkhaast</strong><span id="audioStatus">TAP TO PLAY</span></div>
+      <div class="track-subtitle">BIRTHDAY PLAYLIST</div>
+      <div class="timeline-row">
+        <span id="currentTime">0:00</span>
+        <input id="seekBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek in Darkhaast" />
+        <span id="duration">--:--</span>
+      </div>
+    </div>
+    <button class="player-toggle" id="playerToggle" aria-label="Play Darkhaast"><span id="playerIcon">▶</span></button>
+  </div>
+  <div class="progress" id="progress"></div>
+
+  <main>
+    <section class="screen cinema" id="home">
+      <div class="film-grain"></div>
+      <p class="eyebrow">A little surprise for</p>
+      <h1 class="cinema-title">AYSHA'S<br><span>BIRTHDAY</span></h1>
+      <div class="ticket-date"><span>NOW SHOWING</span><strong id="countdown">12 · OCT</strong><small>AYSHA'S SPECIAL DAY</small></div>
+      <button class="primary" data-next="age">Open your surprise ✨</button>
+      <div class="scroll-hint">scroll to begin ↓</div>
+    </section>
+
+    <section class="screen age-screen" id="age">
+      <div class="stars">✦　⋆　✧　⋆　✦</div>
+      <p class="eyebrow">Today, the universe celebrates</p>
+      <div class="age-number" id="ageNumber" aria-label="17 changing to 18">17</div>
+      <h2>another year of being<br><em>my favourite person</em></h2>
+      <div class="balloons" aria-hidden="true">🎈 🎈 🎉 🎈 🎈</div>
+      <p class="soft-copy">And somehow, you just keep getting more adorable.</p>
+      <button class="primary" data-next="letter">There's more 💌</button>
+    </section>
+
+    <section class="screen letter-screen" id="letter">
+      <div class="paper">
+        <p class="eyebrow">A note from your favourite person</p>
+        <h2>Happy Birthday,<br><span>Aysha.</span></h2>
+        <p class="letter-text">To my Aysha — my Kaju Katli, my Rasmalai, my Motti, my Garam Masala and my little Jigglypuff — you make ordinary days feel special just by being in them.</p>
+        <p class="letter-text">I hope this year gives you a hundred reasons to smile, a thousand hugs, and all the love your heart can hold. You deserve princess treatment today and every day. 💗</p>
+      </div>
+      <button class="primary" data-next="memories">See our memories 📸</button>
+    </section>
+
+    <section class="screen memories-screen" id="memories">
+      <p class="eyebrow">Little moments, big feelings</p>
+      <h2>Our tiny corner<br><em>of the universe</em></h2>
+      <p class="soft-copy">A few of my favourite pictures of you, Aysha. ♡</p>
+      <div class="photo-wall">
+        <figure class="polaroid tilt-left"><img src="assets/aysha-01.jpg" alt="Aysha in a blue outfit" loading="lazy"><figcaption>my favourite smile ♡</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/aysha-02.jpg" alt="Aysha smiling for a selfie" loading="lazy"><figcaption>you being you</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/aysha-03.jpg" alt="Aysha outdoors" loading="lazy"><figcaption>pretty in every frame</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/aysha-04.jpg" alt="Aysha smiling" loading="lazy"><figcaption>that little smile</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/aysha-05.jpg" alt="Aysha in a blue traditional outfit" loading="lazy"><figcaption>my happy place</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/aysha-06.jpg" alt="Aysha in a cute selfie" loading="lazy"><figcaption>cutie, always</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/aysha-07.jpg" alt="Aysha smiling in a photo" loading="lazy"><figcaption>one of a million</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/aysha-08.jpg" alt="Aysha in a selfie" loading="lazy"><figcaption>my favourite human</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/aysha-09.jpg" alt="Aysha in a striped jacket and glasses" loading="lazy"><figcaption>one more reason to smile ♡</figcaption></figure>
+      </div>
+      <div class="upload-note">Every picture here is one you shared — a little gallery just for Aysha. 💗</div>
+      <button class="primary" data-next="scrapbook">One last thing 💞</button>
+    </section>
+
+    <section class="screen scrapbook-screen" id="scrapbook">
+      <p class="eyebrow">A scrapbook of us</p>
+      <h2>Collecting moments,<br><em>keeping you.</em></h2>
+      <div class="scrapbook">
+        <div class="scrap-photo p1"><img src="assets/aysha-03.jpg" alt="Aysha outdoors" loading="lazy"><small>our memory</small></div>
+        <div class="scrap-photo p2"><img src="assets/aysha-06.jpg" alt="Aysha's selfie" loading="lazy"><small>your favourite things</small></div>
+        <div class="scrap-photo p3"><img src="assets/aysha-01.jpg" alt="Aysha in blue" loading="lazy"><small>little love notes</small></div>
+        <div class="scrap-photo p4"><img src="assets/aysha-08.jpg" alt="Aysha's selfie" loading="lazy"><small>my kind of magic</small></div>
+      </div>
+      <button class="primary" data-next="finale">Open your final message 💌</button>
+    </section>
+
+    <section class="screen finale-screen" id="finale">
+      <div class="finale-card">
+        <div class="heart">♥</div>
+        <p class="eyebrow">For you, and only you</p>
+        <h2>Happy Birthday,<br><em>Aysha, my love.</em></h2>
+        <p>No website could fit all the reasons I love you. But I hope this little one reminds you that you're loved more than you know.</p>
+        <button class="primary" id="confettiBtn">Make a wish 🎂</button>
+      </div>
+      <div class="floating-hearts" aria-hidden="true">♡　♥　♡　♥　♡</div>
+      <p class="tiny-footer">made with too much love, just for Aysha</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
